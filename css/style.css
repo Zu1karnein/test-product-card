@@ -31,6 +31,30 @@
   line-height: 24px;
 }
 
+.card-content h3 {
+  color: #515076;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.card-content p {
+  color: #515076;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+span,
+ul {
+  color: #515076;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap; /* перенос карточек на новую строку */
