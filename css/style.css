@@ -2,18 +2,14 @@
   font-family: "montserrat";
 }
 
-.container {
+body {
+  background-repeat: no-repeat;
+  background-position: 200px 0;
+  background-image: url("../img/background_img.png");
   padding: 0 85px;
 }
 
-.bg {
-  background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  background-position: 155px 0;
-}
-
-.bg h1 {
+.main_title {
   text-align: center;
 
   margin: 220px 217px 110px 217px;
