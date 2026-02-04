@@ -58,14 +58,14 @@ ul {
   margin-left: 0;
 }
 
-.cards {
+.cards_section {
   display: flex;
   flex-wrap: wrap; /* перенос карточек на новую строку */
   justify-content: center; /* центрируем все карточки по горизонтали */
   gap: 45px; /* расстояние между карточками */
 }
 
-article {
+.card {
   width: 340px;
   height: 573px;
 
