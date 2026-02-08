@@ -1,0 +1,109 @@
+* {
+  font-family: "montserrat";
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: 200px 0;
+  background-image: url("../img/bg-dandelions.png");
+  padding: 0 85px;
+}
+
+.main_title {
+  text-align: center;
+  margin: 220px 217px 110px 217px;
+  font-weight: 400;
+  font-size: 70px;
+  color: #515076;
+}
+
+.card-content h2 {
+  color: #a5a3b9;
+  margin: 5px 0 5px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.card-content h3 {
+  color: #515076;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.card-content p {
+  color: #515076;
+  margin: 5px 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+span,
+ul {
+  margin: 0 0 5px 0;
+  color: #515076;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+ul {
+  list-style-type: circle; /* полая окружность вместо закрашенной точки */
+  padding-left: 18px; /* или меньше, например 15px */
+  margin-left: 0;
+}
+
+.cards_section {
+  display: flex;
+  flex-wrap: wrap; /* перенос карточек на новую строку */
+  justify-content: center; /* центрируем все карточки по горизонтали */
+  gap: 45px; /* расстояние между карточками */
+  max-width: 1110px; /* (340px * 3) + (45px * 2) = 1110px */
+  margin: 0 auto; /* центрирование самой секции */
+}
+
+.card {
+  width: 340px;
+  height: 573px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f7f7fa;
+}
+
+.card-content {
+  margin: 0 25px 0 25px;
+}
+
+.img-card {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  display: block;
+  width: 290px;
+  height: 245px;
+}
+
+.price {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price p {
+  font-size: 20px;
+  line-height: 24px;
+}
