@@ -72,18 +72,18 @@ ul {
 }
 
 ul {
-  list-style-type: circle; /* полая окружность вместо закрашенной точки */
-  padding-left: 18px; /* или меньше, например 15px */
+  list-style-type: circle;
+  padding-left: 18px;
   margin-left: 0;
 }
 
 .cards_section {
   display: flex;
-  flex-wrap: wrap; /* перенос карточек на новую строку */
-  justify-content: center; /* центрируем все карточки по горизонтали */
-  gap: 45px; /* расстояние между карточками */
-  max-width: 1110px; /* (340px * 3) + (45px * 2) = 1110px */
-  margin: 0 auto; /* центрирование самой секции */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .card {
