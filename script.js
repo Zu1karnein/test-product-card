@@ -9,10 +9,10 @@ firstCardRecolorBtn.addEventListener("click", () => {
 
 // recolor all cards
 const catalogCards = document.querySelectorAll(".card");
-const recolorAllCardsBtn = document.getElementById("recolor-all-cards-btn");
+const allCardsRecolorBtn = document.getElementById("recolor-all-cards-btn");
 const greenHashColor = "#abff96";
 
-recolorAllCardsBtn.addEventListener("click", () => {
+allCardsRecolorBtn.addEventListener("click", () => {
   catalogCards.forEach((card) => (card.style.backgroundColor = greenHashColor));
 });
 
@@ -40,8 +40,8 @@ mainTitle.addEventListener("mouseenter", () => {
 });
 
 // change color of button
-const recolorHimselfBtn = document.getElementById("recolor-himself-btn");
+const himselfRecolorBtn = document.getElementById("recolor-himself-btn");
 
-recolorHimselfBtn.addEventListener("click", () => {
-  recolorHimselfBtn.classList.toggle("blue-bg");
+himselfRecolorBtn.addEventListener("click", () => {
+  himselfRecolorBtn.classList.toggle("blue-bg");
 });
