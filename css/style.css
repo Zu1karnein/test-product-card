@@ -89,10 +89,8 @@ ul {
 .card {
   width: 340px;
   height: 573px;
-
   display: flex;
   flex-direction: column;
-
   background-color: #f7f7fa;
 }
 

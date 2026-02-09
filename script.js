@@ -1,9 +1,9 @@
 // recolor first card
-const recolorFirstCardBtn = document.getElementById("recolor-first-card-btn");
+const firstCardRecolorBtn = document.getElementById("recolor-first-card-btn");
 const firstCard = document.querySelector(".card__mousse");
 const blueHashColor = "#96ffef";
 
-recolorFirstCardBtn.addEventListener("click", () => {
+firstCardRecolorBtn.addEventListener("click", () => {
   firstCard.style.backgroundColor = blueHashColor;
 });
 
@@ -33,10 +33,10 @@ function openGoogle() {
 }
 
 // main title to console
-const printMainTitle = document.querySelector(".main_title");
+const mainTitle = document.querySelector(".main_title");
 
-printMainTitle.addEventListener("mouseenter", () => {
-  console.log(printMainTitle.textContent);
+mainTitle.addEventListener("mouseenter", () => {
+  console.log(mainTitle.textContent);
 });
 
 // change color of button
