@@ -1,5 +1,5 @@
 // задание №5.1 создание функции для вывода температуры
-function getTemp(city, temp) {
+function getCityTemp(city, temp) {
   console.log(`Сейчас в ${city} температура - ${temp} градусов по Цельсию`);
 }
 
@@ -22,10 +22,10 @@ let product = "apple";
 let priceProduct = 10;
 
 const buyProduct = (budget) => {
-  console.log(
-    (canBuy =
-      budget >= priceProduct
-        ? `${product} приобретён. Спасибо за покупку!`
-        : `Вам не хватает ${priceProduct - budget}, пополните баланс`),
-  );
+  canBuy =
+    budget >= priceProduct
+      ? `${product} приобретён. Спасибо за покупку!`
+      : `Вам не хватает ${priceProduct - budget}, пополните баланс`;
+
+  console.log(canBuy);
 };
