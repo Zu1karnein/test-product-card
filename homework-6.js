@@ -12,24 +12,24 @@ const user = {
 
 // задание №6.2 создание объекта с информацией о машине
 const car = {
-  owner: user,
-
   brand: "Toyota",
   model: "Camry",
   year: 2020,
   color: "Серебристый",
   engine: "2.5L 4-цилиндровый",
+
+  owner: user,
 };
 
-// задание №6.3 создание функции проверка наличия максимальной скорости
-const checkMaxSpeed = (car) => {
+// задание №6.3 создание функции которая добавляет максимальную скорость
+const addMaxSpeed = (car) => {
   if (!("maxSpeed" in car)) {
     car.maxSpeed = 300;
   }
 };
 
 // задание №6.4 создание функции для вывода значения объекта
-const showValue = (obj, key) => {
+const showObjectValue = (obj, key) => {
   console.log(obj[key]);
 };
 
@@ -81,18 +81,25 @@ books.push({
 // задание №6.7 второй массив книг
 const books2 = [
   {
-    title: "1984",
-    author: "Джордж Оруэлл",
-    year: 1948,
-    colorCover: "Черный",
-    genre: "Антология",
+    title: "Дюна",
+    author: "Альфред Бест",
+    year: 1965,
+    colorCover: "Синий",
+    genre: "Фантастика",
   },
   {
-    title: "Скотный двор",
-    author: "Овсепян Армен",
-    year: 1948,
-    colorCover: "Черный",
-    genre: "Антология",
+    title: "Мессия Дюны",
+    author: "Альфред Бест",
+    year: 1971,
+    colorCover: "Синий",
+    genre: "Фантастика",
+  },
+  {
+    title: "Дети Дюны",
+    author: "Альфред Бест",
+    year: 1975,
+    colorCover: "Синий",
+    genre: "Фантастика",
   },
 ];
 
