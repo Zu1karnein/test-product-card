@@ -79,7 +79,7 @@ books.push({
 });
 
 // задание №6.7 второй массив книг
-const booksDune = [
+const duneBooks = [
   {
     title: "Дюна",
     author: "Альфред Бест",
@@ -104,7 +104,7 @@ const booksDune = [
 ];
 
 // объединение двух массивов книг с помощью оператора spread
-const allBooks = [...books, ...booksDune];
+const allBooks = [...books, ...duneBooks];
 
 // задание №6.8 проверка на редкость, метод map
 const rareBooks = allBooks.map((book) => ({
