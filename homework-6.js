@@ -17,9 +17,9 @@ const car = {
   year: 2020,
   color: "Серебристый",
   engine: "2.5L 4-цилиндровый",
-
-  owner: user,
 };
+
+car.owner = user;
 
 // задание №6.3 создание функции которая добавляет максимальную скорость
 const addMaxSpeed = (car) => {
@@ -79,7 +79,7 @@ books.push({
 });
 
 // задание №6.7 второй массив книг
-const books2 = [
+const booksDune = [
   {
     title: "Дюна",
     author: "Альфред Бест",
@@ -104,7 +104,7 @@ const books2 = [
 ];
 
 // объединение двух массивов книг с помощью оператора spread
-const allBooks = [...books, ...books2];
+const allBooks = [...books, ...booksDune];
 
 // задание №6.8 проверка на редкость, метод map
 const rareBooks = allBooks.map((book) => ({
