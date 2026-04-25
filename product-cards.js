@@ -36,7 +36,7 @@ export const productCards = [
     firstIngredient: "воски",
     secondIngredient: "минералы",
     thirdIngredient: "масла",
-    price: "4 750 &#8381",
+    priceP: "4 750 &#8381",
     image: "img/gift-set-first.png",
   },
   {
@@ -47,7 +47,7 @@ export const productCards = [
     firstIngredient: "воски",
     secondIngredient: "минералы",
     thirdIngredient: "масла",
-    price: "7 520 &#8381",
+    priceP: "7 520 &#8381",
     image: "img/gift-set-fifth.png",
   },
 ];

@@ -18,9 +18,11 @@ productCards.forEach((card) => {
   cardClone.querySelector(".thirdIngredient").textContent =
     card.thirdIngredient;
 
-  cardClone.querySelector(".priceP").innerHTML = card.price || card.priceP;
+  cardClone.querySelector(".priceP").innerHTML = card.priceP;
 
   cardClone.querySelector(".img-card").src = card.image;
 
   cardsSection.appendChild(cardClone);
+
+  console.log(card);
 });
