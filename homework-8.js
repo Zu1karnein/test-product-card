@@ -17,12 +17,12 @@ function createCard(numberOfCards) {
     cardClone.querySelector(".title").textContent = card.title;
     cardClone.querySelector(".description").textContent = card.description;
 
-    cardClone.querySelector(".firstIngredient").textContent =
-      card.firstIngredient;
-    cardClone.querySelector(".secondIngredient").textContent =
-      card.secondIngredient;
-    cardClone.querySelector(".thirdIngredient").textContent =
-      card.thirdIngredient;
+    const list = cardClone.querySelector(".ingredients-list");
+    card.ingredients.forEach((ingredient) => {
+      const li = document.createElement("li");
+      li.textContent = ingredient;
+      list.appendChild(li);
+    });
 
     cardClone.querySelector(".priceP").innerHTML = card.priceP;
 
