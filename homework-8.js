@@ -6,28 +6,31 @@ console.log("JS WORKS");
 const cardTemplate = document.getElementById("card-template");
 const cardsSection = document.getElementById("cards-section");
 
-productCards.forEach((card) => {
-  const cardClone = cardTemplate.content.cloneNode(true);
+function createCard(numberOfCards) {
+  cardsSection.innerHTML = "";
+  productCards.slice(0, numberOfCards).forEach((card) => {
+    const cardClone = cardTemplate.content.cloneNode(true);
 
-  const article = cardClone.querySelector("article");
-  article.className = card.name;
+    const article = cardClone.querySelector("article");
+    article.className = card.name;
 
-  cardClone.querySelector(".title").textContent = card.title;
-  cardClone.querySelector(".description").textContent = card.description;
+    cardClone.querySelector(".title").textContent = card.title;
+    cardClone.querySelector(".description").textContent = card.description;
 
-  cardClone.querySelector(".firstIngredient").textContent =
-    card.firstIngredient;
-  cardClone.querySelector(".secondIngredient").textContent =
-    card.secondIngredient;
-  cardClone.querySelector(".thirdIngredient").textContent =
-    card.thirdIngredient;
+    cardClone.querySelector(".firstIngredient").textContent =
+      card.firstIngredient;
+    cardClone.querySelector(".secondIngredient").textContent =
+      card.secondIngredient;
+    cardClone.querySelector(".thirdIngredient").textContent =
+      card.thirdIngredient;
 
-  cardClone.querySelector(".priceP").innerHTML = card.priceP;
+    cardClone.querySelector(".priceP").innerHTML = card.priceP;
 
-  cardClone.querySelector(".img-card").src = card.image;
+    cardClone.querySelector(".img-card").src = card.image;
 
-  cardsSection.appendChild(cardClone);
-});
+    cardsSection.appendChild(cardClone);
+  });
+}
 
 // reduce
 const allCards = productCards.reduce((acc, card) => {
@@ -35,6 +38,23 @@ const allCards = productCards.reduce((acc, card) => {
 }, []);
 
 console.log(allCards);
+
+// prompt
+let numberOfCards;
+
+while (true) {
+  numberOfCards = Number(
+    prompt("Введите количество карточек для отображения:"),
+  );
+
+  if (numberOfCards > 0 && numberOfCards <= 5) {
+    break;
+  } else {
+    alert("Пожалуйста, введите число от 1 до 5.");
+  }
+}
+
+createCard(numberOfCards);
 
 // BUTTONS
 // recolor first card
