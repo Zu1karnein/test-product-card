@@ -29,6 +29,13 @@ productCards.forEach((card) => {
   cardsSection.appendChild(cardClone);
 });
 
+// reduce
+const allCards = productCards.reduce((acc, card) => {
+  return [...acc, { [card.title]: card.description }];
+}, []);
+
+console.log(allCards);
+
 // BUTTONS
 // recolor first card
 const firstCardRecolorBtn = document.getElementById("recolor-first-card-btn");
