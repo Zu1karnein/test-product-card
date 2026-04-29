@@ -8,7 +8,9 @@ const cardsSection = document.getElementById("cards-section");
 
 function createCard(numberOfCards) {
   cardsSection.innerHTML = "";
-  productCards.slice(0, numberOfCards).forEach((card) => {
+  const limitedCards = productCards.slice(0, numberOfCards);
+
+  limitedCards.forEach((card) => {
     const cardClone = cardTemplate.content.cloneNode(true);
 
     const article = cardClone.querySelector("article");
@@ -24,20 +26,21 @@ function createCard(numberOfCards) {
       list.appendChild(li);
     });
 
-    cardClone.querySelector(".priceP").innerHTML = card.priceP;
+    cardClone.querySelector(".price_value").innerHTML =
+      `${card.price_value}&#8381`;
 
-    cardClone.querySelector(".img-card").src = card.image;
+    cardClone.querySelector(".img-card").src = `img/${card.image}.png`;
 
     cardsSection.appendChild(cardClone);
   });
 }
 
 // reduce
-const allCards = productCards.reduce((acc, card) => {
+const productInfo = productCards.reduce((acc, card) => {
   return [...acc, { [card.title]: card.description }];
 }, []);
 
-console.log(allCards);
+console.log(productInfo);
 
 // prompt
 let numberOfCards;
