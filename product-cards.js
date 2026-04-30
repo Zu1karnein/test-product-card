@@ -8,7 +8,7 @@ export const productCards = [
       "витамины C, A, PP, B и E",
       "солнцезащитные компоненты",
     ],
-    price_value: 2750,
+    priceValue: 2750,
     image: "moisturizing-mousse",
   },
   {
@@ -16,7 +16,7 @@ export const productCards = [
     title: "Увлажняющая маска",
     description: "Способствует удерживанию влаги в верхних слоях кожи.",
     ingredients: ["воски", "минералы", "масла"],
-    price_value: 3500,
+    priceValue: 3500,
     image: "moisturizing-mask",
   },
   {
@@ -28,7 +28,7 @@ export const productCards = [
       "витамины C, A, PP, B и E",
       "солнцезащитные компоненты",
     ],
-    price_value: 1650,
+    priceValue: 1650,
     image: "cleansing-gel",
   },
   {
@@ -36,7 +36,7 @@ export const productCards = [
     title: "Подарочный набор №1",
     description: "Набор, состоящий из увлажняющего крема и маски.",
     ingredients: ["воски", "минералы", "масла"],
-    price_value: 4750,
+    priceValue: 4750,
     image: "gift-set-first",
   },
   {
@@ -45,7 +45,7 @@ export const productCards = [
     description:
       "Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.",
     ingredients: ["воски", "минералы", "масла"],
-    price_value: 7520,
+    priceValue: 7520,
     image: "gift-set-fifth",
   },
 ];

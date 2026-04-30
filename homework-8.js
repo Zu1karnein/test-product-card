@@ -8,7 +8,6 @@ const cardsSection = document.getElementById("cards-section");
 
 function createCard(numberOfCards) {
   cardsSection.innerHTML = "";
-  const limitedCards = productCards.slice(0, numberOfCards);
 
   limitedCards.forEach((card) => {
     const cardClone = cardTemplate.content.cloneNode(true);
@@ -26,8 +25,8 @@ function createCard(numberOfCards) {
       list.appendChild(li);
     });
 
-    cardClone.querySelector(".price_value").innerHTML =
-      `${card.price_value}&#8381`;
+    cardClone.querySelector(".priceValue").innerHTML =
+      `${card.priceValue}&#8381`;
 
     cardClone.querySelector(".img-card").src = `img/${card.image}.png`;
 
@@ -56,5 +55,8 @@ while (true) {
     alert("Пожалуйста, введите число от 1 до 5.");
   }
 }
+
+// limit number of cards
+const limitedCards = productCards.slice(0, numberOfCards);
 
 createCard(numberOfCards);
