@@ -1,10 +1,15 @@
+// BUTTONS
 // recolor first card
 const firstCardRecolorBtn = document.getElementById("recolor-first-card-btn");
 const firstCard = document.querySelector(".card__mousse");
 const blueHashColor = "#96ffef";
 
 firstCardRecolorBtn.addEventListener("click", () => {
-  firstCard.style.backgroundColor = blueHashColor;
+  if (firstCard) {
+    firstCard.style.backgroundColor = blueHashColor;
+  } else {
+    console.log("first card not found");
+  }
 });
 
 // recolor all cards

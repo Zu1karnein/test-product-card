@@ -46,7 +46,7 @@ button {
   text-transform: uppercase;
 }
 
-.card-content h3 {
+.title {
   color: #515076;
   margin: 0;
   font-weight: 700;
@@ -54,7 +54,7 @@ button {
   line-height: 27px;
 }
 
-.card-content p {
+.description {
   color: #515076;
   margin: 5px 0 15px 0;
   font-weight: 400;
@@ -71,7 +71,7 @@ ul {
   line-height: 18px;
 }
 
-ul {
+.ingredients-list {
   list-style-type: circle;
   padding-left: 18px;
   margin-left: 0;
@@ -115,13 +115,14 @@ ul {
   align-items: center;
 }
 
-.price span {
+.price_label {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
-.price p {
-  font-size: 20px;
+.price_value {
+  color: #515076;
+  font-size: 17px;
   line-height: 24px;
 }
