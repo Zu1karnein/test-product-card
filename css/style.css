@@ -6,6 +6,9 @@ body {
   background-repeat: no-repeat;
   background-position: 400px 0;
   background-image: url("../img/bg-dandelions.png");
+}
+
+.page {
   padding: 0 85px;
 }
 
@@ -125,4 +128,115 @@ ul {
   color: #515076;
   font-size: 17px;
   line-height: 24px;
+}
+
+.footer {
+  background-color: #3a3a3a;
+  color: white;
+
+  margin-top: 48px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+.footer__info-logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.footer__info-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__info-socials {
+  display: flex;
+  padding-top: 24px;
+  gap: 24px;
+}
+
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.footer__subscribe-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__subscribe-form {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 18px 16px;
+  width: 420px;
+  gap: 12px;
+}
+
+.footer__subscribe-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  min-width: 0;
+}
+
+.footer__subscribe-form input::placeholder {
+  color: #000000bf;
+  font-size: 12px;
+  width: 500;
+}
+
+.footer__subscribe-divider {
+  width: 1px;
+  height: 22px;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+.footer__subscribe-form button {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.footer__links-list {
+  color: white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__links-item {
+  margin-bottom: 5px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.footer__bottom-line {
+  width: 60px;
+  border-top: 1px solid #fff;
+  margin-bottom: 16px;
+}
+
+.footer__bottom-copyright {
+  font-size: 14px;
+  font-weight: 400;
 }

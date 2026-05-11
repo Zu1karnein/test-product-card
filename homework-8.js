@@ -44,19 +44,19 @@ console.log(productInfo);
 // prompt
 let numberOfCards;
 
-// while (true) {
-//   numberOfCards = Number(
-//     prompt("Введите количество карточек для отображения:"),
-//   );
+while (true) {
+  numberOfCards = Number(
+    prompt("Введите количество карточек для отображения:"),
+  );
 
-//   if (numberOfCards > 0 && numberOfCards <= 5) {
-//     break;
-//   } else {
-//     alert("Пожалуйста, введите число от 1 до 5.");
-//   }
-// }
+  if (numberOfCards > 0 && numberOfCards <= 5) {
+    break;
+  } else {
+    alert("Пожалуйста, введите число от 1 до 5.");
+  }
+}
 
 // limit number of cards
 const limitedCards = productCards.slice(0, numberOfCards);
 
-// createCard(numberOfCards);
+createCard(numberOfCards);
