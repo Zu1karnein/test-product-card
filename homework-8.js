@@ -1,7 +1,5 @@
 import { productCards } from "./product-cards.js";
 
-console.log("JS WORKS");
-
 // template
 const cardTemplate = document.getElementById("card-template");
 const cardsSection = document.getElementById("cards-section");
