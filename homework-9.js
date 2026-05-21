@@ -56,6 +56,8 @@ name: ${user.name}
 surname: ${user.surename}
 birth_date: ${user.birth_date}
 createdOn: ${user.createdOn}`);
+
+    modal.classList.remove("modal-showed");
   } else {
     form_modal.reportValidity();
   }
