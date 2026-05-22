@@ -38,15 +38,16 @@ confirmPasswordInput.addEventListener("input", () => {
 // form modal
 const form_modal = document.querySelector(".modal__form");
 
+user = {
+  username: form_modal.querySelector("#username").value,
+  name: form_modal.querySelector("#name").value,
+  surename: form_modal.querySelector("#surename").value,
+  createdOn: new Date(),
+  birth_date: form_modal.querySelector("#birth_date").value,
+};
+
 form_modal.addEventListener("submit", (event) => {
   event.preventDefault();
-  user = {
-    username: form_modal.querySelector("#username").value,
-    name: form_modal.querySelector("#name").value,
-    surename: form_modal.querySelector("#surename").value,
-    createdOn: new Date(),
-    birth_date: form_modal.querySelector("#birth_date").value,
-  };
 
   if (form_modal.checkValidity()) {
     console.log(`
