@@ -2,6 +2,8 @@
 const form_footer = document.querySelector(".footer__subscribe-form");
 const emailInput = form_footer.querySelector("input[type='email']");
 
+let user = null;
+
 form_footer.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = emailInput.value;
