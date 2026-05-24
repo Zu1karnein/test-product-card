@@ -13,34 +13,121 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="main_title">Выбери свой продукт</h1>
-    <div class="btn_section">
-      <button id="recolor-first-card-btn">Первая карточка</button>
-      <button id="recolor-all-cards-btn">Все карточки</button>
-      <button id="open-google-btn">Открыть Google</button>
-      <button id="recolor-himself-btn">Нажми на меня!</button>
+    <div class="page">
+      <h1 class="main_title">Выбери свой продукт</h1>
+      <div class="btn_section-allbuttons">
+        <div class="btn_section">
+          <button id="recolor-first-card-btn">Первая карточка</button>
+          <button id="recolor-all-cards-btn">Все карточки</button>
+          <button id="open-google-btn">Открыть Google</button>
+          <button id="recolor-himself-btn">Нажми на меня!</button>
+        </div>
+        <button id="register-btn">Регистрация</button>
+      </div>
+
+      <section id="cards-section" class="cards_section"></section>
+
+      <template id="card-template">
+        <article class="card">
+          <img class="img-card" src="" />
+          <div class="card-content">
+            <h2>для нормальной кожи</h2>
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <span>Состав:</span>
+            <ul class="ingredients-list"></ul>
+            <div class="price">
+              <span class="price_label">Цена</span>
+              <p class="priceValue"></p>
+            </div>
+          </div>
+        </article>
+      </template>
     </div>
 
-    <section id="cards-section" class="cards_section"></section>
-
-    <template id="card-template">
-      <article class="card">
-        <img class="img-card" src="" />
-        <div class="card-content">
-          <h2>для нормальной кожи</h2>
-          <h3 class="title"></h3>
-          <p class="description"></p>
-          <span>Состав:</span>
-          <ul class="ingredients-list"></ul>
-          <div class="price">
-            <span class="price_label">Цена</span>
-            <p class="priceValue"></p>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__info">
+          <h1 class="footer__info-logo">Product Cards</h1>
+          <p class="footer__info-description">
+            У нас самые лучшие продукты для кожи!
+          </p>
+          <div class="footer__info-socials">
+            <img src="./img/icons/telegram.svg" alt="logo telegram" />
+            <img src="./img/icons/vk.svg" alt="logo vk" />
           </div>
         </div>
-      </article>
-    </template>
+        <div class="footer__subscribe">
+          <h3 class="footer__subscribe-title">Подпишись на наши акции</h3>
+          <form class="footer__subscribe-form" action="" method="get">
+            <input type="email" placeholder="Введите email..." required />
+            <div class="footer__subscribe-divider"></div>
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__links-title">Быстрые ссылки</h3>
+          <nav class="footer__links-nav">
+            <ul class="footer__links-list">
+              <li class="footer__links-item">Главная</li>
+              <li class="footer__links-item">Магазин</li>
+              <li class="footer__links-item">Контакты</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-line"></div>
+        <p class="footer__bottom-copyright">
+          www.product-cards.com©all right reserve
+        </p>
+      </div>
+    </footer>
+
+    <!-- modal window -->
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <span class="modal__close-btn">&times;</span>
+        <h2>Регистрация</h2>
+        <form class="modal__form">
+          <div class="modal__form-inputs">
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Имя" required />
+            <label for="surename">Фамилия</label>
+            <input type="text" id="surename" placeholder="Фамилия" required />
+            <label for="birth_date">Дата рождения</label>
+            <input
+              type="date"
+              id="birth_date"
+              placeholder="Дата рождения"
+              required
+            />
+            <label for="username">Логин</label>
+            <input type="text" id="username" placeholder="Логин" required />
+            <label for="password">Пароль</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Пароль"
+              required
+            />
+            <label for="confirm-password">Повторите пароль</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Повторите пароль"
+              required
+            />
+          </div>
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
 
     <script src="homework-8.js" type="module"></script>
+    <script src="homework-9.js"></script>
     <script src="script.js" type="module"></script>
   </body>
 </html>
